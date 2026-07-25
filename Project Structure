@@ -1,0 +1,125 @@
+YT-VIDEO-CHATBOT-RAG/
+│
+├── .github/
+│   └── workflows/
+│       └── cicd.yaml
+│
+├── .venv/
+│
+├── artifacts/
+│   │
+│   ├── transcripts/
+│   │      transcript.txt
+│   │
+│   ├── cleaned_text/
+│   │
+│   ├── chunks/
+│   │
+│   ├── embeddings/
+│   │
+│   ├── vector_store/
+│   │      faiss_index/
+│   │
+│   ├── retrieved_docs/
+│   │
+│   ├── responses/
+│   │
+│   └── logs/
+│
+├── config/
+│   └── config.yaml
+│
+├── logs/
+│   └── running_logs.log
+│
+├── research/
+│   │
+│   ├── 01_transcript_extraction.ipynb
+│   ├── 02_preprocessing.ipynb
+│   ├── 03_chunking.ipynb
+│   ├── 04_embeddings.ipynb
+│   ├── 05_vector_store.ipynb
+│   ├── 06_retriever.ipynb
+│   ├── 07_rag_chain.ipynb
+│   ├── 08_chatbot.ipynb
+│   └── experiment.ipynb
+│
+├── src/
+│   └── yt_chatbot/
+│
+│       ├── components/
+│       │
+│       │   ├── video_loader.py
+│       │   ├── transcript_extractor.py
+│       │   ├── text_preprocessor.py
+│       │   ├── text_chunker.py
+│       │   ├── embedding_generator.py
+│       │   ├── faiss_vector_store.py
+│       │   ├── retriever.py
+│       │   ├── prompt_builder.py
+│       │   ├── rag_chain.py
+│       │   ├── response_generator.py
+│       │   ├── conversation_memory.py
+│       │   └── evaluation.py
+│       │
+│       ├── config/
+│       │      configuration.py
+│       │
+│       ├── constants/
+│       │      __init__.py
+│       │
+│       ├── entity/
+│       │      config_entity.py
+│       │
+│       ├── logging/
+│       │      __init__.py
+│       │
+│       ├── pipeline/
+│       │
+│       │      stage_01_video_loading.py
+│       │      stage_02_transcript_extraction.py
+│       │      stage_03_preprocessing.py
+│       │      stage_04_chunking.py
+│       │      stage_05_embeddings.py
+│       │      stage_06_vector_store.py
+│       │      stage_07_retriever.py
+│       │      stage_08_rag_chain.py
+│       │      stage_09_chat.py
+│       │
+│       ├── prompts/
+│       │      system_prompt.py
+│       │      qa_prompt.py
+│       │
+│       ├── utils/
+│       │      common.py
+│       │      helper.py
+│       │      video_utils.py
+│       │      faiss_utils.py
+│       │
+│       └── __init__.py
+│
+├── api/
+│   │
+│   ├── routes/
+│   │      chat.py
+│   │      process_video.py
+│   │
+│   ├── schemas/
+│   │      request.py
+│   │      response.py
+│   │
+│   └── dependencies.py
+│
+├── templates/
+│
+├── static/
+│
+├── app.py
+├── main.py
+├── schema.yaml
+├── params.yaml
+├── requirements.txt
+├── setup.py
+├── .env
+├── .gitignore
+└── README.md
