@@ -64,11 +64,6 @@ User Question ──► Query Embedding
 
 ---
 
-<p align="center">
-  <img src="assets/rag_diagram.png" width="1000">
-</p>
-
----
 
 ## ✨ Features
 
@@ -98,11 +93,6 @@ User Question ──► Query Embedding
 
 ---
 
-<p align="center">
-  <img src="assets/tech_stack.png" width="1000">
-</p>
-
----
 
 ## ⚙️ Workflow
 
